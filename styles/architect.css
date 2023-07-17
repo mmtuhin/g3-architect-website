@@ -6,6 +6,14 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+.grey-text{
+  color: #727272 ;
+}
+.section-title{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #131313;
+}
 .button-primary{
   border-radius: 8px;
   background: #FF900E;
@@ -29,11 +37,7 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-.nav-title{
-  font-size: 3rem;
-  font-weight: 700;
-  color: #131313;
-}
+
 nav ul {
   display: flex;
 }
@@ -105,15 +109,36 @@ main{
 .teams-description{
   color: #727272;
 }
+/* Facts Start */
+.fact-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+.fact-card-container .card{
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  text-align: center;
+  padding: 2.75rem 2rem;
+}
+.fact-card-container .card-stat{
+  font-size: 2.8rem;
+  color: #424242;
+  margin: 8px 0;
+}
+.fact-card-container .card-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 5px;
+}
 
 /* Responsive media query */
 
 /* Mobile devices */
 @media screen and (max-width:576px) {
-  header, .teams-content{
+  header, .teams-content, .fact-card-container{
     padding: 10px 5px;
   }
-  nav, .teams-container{
+  nav, .teams-container, .fact-card-container{
     flex-direction: column;
   }
   .teams-img-container{
